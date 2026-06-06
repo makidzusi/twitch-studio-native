@@ -1,0 +1,36 @@
+# Build outputs
+bin/
+obj/
+out/
+artifacts/
+release/
+installer/
+
+# Temporary build workspace
+.tmp-build/
+
+# Visual Studio / Rider
+.vs/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.rsuser
+
+# .NET
+TestResults/
+*.nupkg
+*.snupkg
+project.lock.json
+project.assets.json
+
+# Logs and diagnostics
+*.log
+*.tlog
+*.binlog
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini

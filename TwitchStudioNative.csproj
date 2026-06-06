@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>Assets\AppIcon.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    <FrameworkReference Include="Microsoft.WindowsDesktop.App.WindowsForms" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Vad\silero_vad_v5.onnx" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="Locales\*.json" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+    <Content Include="Vosk\vosk-model-small-ru-0.22\**\*.*" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ML.OnnxRuntime" Version="1.22.1" />
+    <PackageReference Include="NAudio" Version="2.2.1" />
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.3967.48" />
+    <PackageReference Include="Vosk" Version="0.3.38" />
+    <PackageReference Include="WPF-UI" Version="4.3.0" />
+  </ItemGroup>
+
+</Project>
